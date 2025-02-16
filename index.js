@@ -11,6 +11,10 @@ app.get("/", (req, res) => {
   res.send("<h1>Backend working!</h1>");
 });
 
+app.get("/hello", (req, res) => {
+  res.json({ message: "Hello from Back-end 🚀" });
+});
+
 function start() {
   app.listen(PORT, () => {
     console.log("Server has been started on port:", PORT);
